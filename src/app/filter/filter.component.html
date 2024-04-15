@@ -1,0 +1,22 @@
+<div class="row filter p-5">
+    <div class="col-12">
+        <form class="row p-4  align-items-center container-filter">
+            <div class="col-sm-3 col-md-3">
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <select class="form-select" class="form-control" placeholder="Busqueda" aria-label="Default select example" id="item-input" #newItem>
+                    <option selected value="">Seleccione una opcion</option>
+                    <option value="jewelery">Joyeria</option>
+                    <option value="women's clothing">Ropa Mujer</option>
+                    <option value="men's clothing">Ropa Hombre</option>
+                    <option value="electronics">Electronicos</option>
+                  </select>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <button class="btn btn-primary" type="button" (click)="submit(newItem.value)">Buscar</button>
+            </div>
+            <div class="col-sm-3 col-md-3">
+            </div>
+        </form>
+    </div>
+</div>
